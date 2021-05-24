@@ -1,7 +1,7 @@
 "use strict";
 console.log("Running webapp...");
 
-heroku buildpacks:set heroku/nodejs
+// heroku buildpacks:set heroku/nodejs
 
 let Express = require('express');
 let app = new Express();
