@@ -4,13 +4,13 @@
   "description": "",
   "main": "main.js",
   "engines": {
-    "node": "5.x"
-  }
+    "node": "14.x"
+  },
   "scripts": {
     "test": "node test.js",
     "start": "gulp",
-    "local": "set DEBUG=app,app:*&&nodemon app.js"
-    "lint": "eslint app.js"
+    "local": "set DEBUG=app,app:*&&nodemon app.js",
+    "lint": "eslint app.js",
     "preinstall": "npx npm-force-resolutions"
   },
   "repository": {
@@ -32,8 +32,8 @@
   },
   "devDependencies": {
     "nodemon": "^1.9.2"
-  }
+  },
   "resolutions": {
-    "graceful-fs: ^4.2.2"
+    "graceful-fs": "^4.2.2"
   }
 }
