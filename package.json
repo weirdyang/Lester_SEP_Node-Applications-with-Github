@@ -1,15 +1,17 @@
 {
-  "os": "linux",
   "name": "github-integration",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "engines": {
-    "node": "5.x"
-  },
+    "node": "14.x"
+  }
   "scripts": {
-    "test": "sudo node test.js",
-    "start": "gulp"
+    "test": "node test.js",
+    "start": "gulp",
+    "local": "set DEBUG=app,app:*&&nodemon app.js"
+    "lint": "eslint app.js"
+    "preinstall": "npx npm-force-resolutions"
   },
   "repository": {
     "type": "git",
@@ -30,5 +32,8 @@
   },
   "devDependencies": {
     "nodemon": "^1.9.2"
+  }
+  "resolutions": {
+    "graceful-fs: ^4.2.2"
   }
 }
